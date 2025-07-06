@@ -14,9 +14,9 @@
 
 ## 📊 Problem Statement
 
-User participation during e-commerce livestreams was underperforming, as indicated by low Clickthrough Rate (CTR) and Livestream Conversion Rate.  
-To remain competitive, increasing engagement and loyalty was critical.
+Product team wants to evaluate which pricing strategy — Standard ($17.99/month, no new features) vs. Premium ($29.99/month, includes a new built-in feature that enables seamless streaming even with poor internet connectivity) — maximizes long-term revenue while balancing user churn.
 
+Note: The Premium plan pricing was recently increased from $25.99/month to 	$29.99/month.*
 ---
 
 ## 📊 Objective
