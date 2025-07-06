@@ -97,7 +97,7 @@ This test assumes:
 
 ### 📈 LTV vs. Churn Risk
 
-- Premium users have **~15–18% higher projected LTV** than Standard users.
+- Premium users have **~50% higher projected LTV** than Standard users.
 - Churn risk increases **moderately** in Premium, but not enough to offset the revenue benefit.
 
 ### 📈 Conversion Rate Impact
