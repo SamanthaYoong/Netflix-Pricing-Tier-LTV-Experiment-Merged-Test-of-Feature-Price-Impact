@@ -5,7 +5,7 @@ This case study simulates a pricing tier experiment for a subscription-based pro
 
 ## 📊 Dashboard Preview
 
-![Dashboard Preview](Netflix-Pricing-Tier-LTV-Experiment-Merged-Test-of-Feature-&-Price-Impact)
+![Dashboard Preview](Netflix-Pricing-Tier-LTV-Experiment-Merged-Test-of-Feature-&-Price-Impact.png)
 
 ---
 
