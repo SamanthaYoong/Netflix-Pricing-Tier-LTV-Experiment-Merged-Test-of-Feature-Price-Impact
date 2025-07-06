@@ -27,7 +27,7 @@ The Premium tier price was recently increased from **$25.99** to **$29.99**.
 ### 1. 📈 **Primary Hypothesis – LTV Impact**
 
 - **H₀**: No significant difference in average LTV between Premium and Standard tiers.
-- **H₁**: The premium tier results in at least 15% higher average projected LTV compared to the Standard tier, with churn not exceeding 1.2x that of the Standard tier.
+- **H₁**: Premium tier is at least 15% higher average projected LTV compared to the Standard tier, with churn not exceeding 1.2x that of the Standard tier.
 
 ### 2. 📈 **Secondary Hypothesis – Churn Risk**
 
