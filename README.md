@@ -16,7 +16,7 @@
 
 Product team wants to evaluate which pricing strategy — Standard ($17.99/month, no new features) vs. Premium ($29.99/month, includes a new built-in feature that enables seamless streaming even with poor internet connectivity) — maximizes long-term revenue while balancing user churn.
 
-Note: The Premium plan pricing was recently increased from $25.99/month to 	$29.99/month.*
+Note: The Premium plan pricing was recently increased from $25.99/month to $29.99/month.
 ---
 
 ## 📊 Objective
