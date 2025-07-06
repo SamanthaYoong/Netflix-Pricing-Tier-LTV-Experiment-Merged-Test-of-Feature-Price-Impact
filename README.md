@@ -8,7 +8,7 @@
 
 ## 🖼️ Dashboard Preview
 
-![Dashboard Preview](./Executive-Overview(3).png)
+![Dashboard Preview](./Netflix-Pricing-Tier-LTV-Experiment-Merged-Test-of-Feature-&-Price-Impact.png)
 
 ---
 
