@@ -3,7 +3,7 @@
 > **Simulated case study to demonstrate data analysis logic and product thinking.**  
 > Tools: SQL, Excel, Tableau, GitHub  
 > 🔗 [View the Interactive Tableau Dashboard](https://public.tableau.com/views/NetflixPricingTierLTVExperimentMergedTestofFeaturePriceImpact/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-
+Executive Overview (3).png
 ---
 
 ## 📊 Problem Statement
