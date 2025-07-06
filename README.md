@@ -27,22 +27,20 @@ The Premium tier price was recently increased from **$25.99** to **$29.99**.
 ### 1. 📈 **Primary Hypothesis – LTV Impact**
 
 - **H₀**: No significant difference in average LTV between Premium and Standard tiers.
-- **H₁**: Premium tier is at least 15% higher average projected LTV compared to the Standard tier, with churn not exceeding 1.2x that of the Standard tier.
+- **H₁**: Premium tier is at least 15% higher average projected LTV compared to the Standard tier.
 
 ### 2. 📈 **Secondary Hypothesis – Churn Risk**
 
-- **H₀**: Churn rate remains the same or lower for Premium tier.
-- **H₁**: Churn rate is significantly higher in Premium, potentially offsetting revenue gains.
+- **H₀**: Churn rate remains the same or lower for the Premium tier.
+- **H₁**: Churn rate for the Premium tier is at least 1.5x higher in Premium, potentially offsetting revenue gains by 5-10%.
 
-### 3. 📈 **Tertiary Hypothesis – Feature Value**
+### 3. 📈 **Behavioral Hypothesis – User Response**
 
-- **H₀**: New feature does not improve retention or conversion.
-- **H₁**: Feature increases retention/conversion enough to justify price.
-
-### 4. 📈 **Behavioral Hypothesis – User Response**
-
-- **H₀**: Retention and conversion remain the same or fall slightly, while downgrade rate increases.
-- **H₁**: Premium tier boosts LTV via higher retention, conversion, and lower downgrade rate.
+- **H₀**: Retention and conversion remain the same or fall slightly, while the downgrade rate increases.
+- **H₁**: Premium tier boosts LTV by at least 10%, driven by:
+          ≥ 10% increase in conversion rate
+          ≥ 15% decrease in downgrade rate
+  	.. despite the higher monthly price of $29.99
 
 ---
 
