@@ -5,7 +5,7 @@ This case study simulates a pricing tier experiment for a subscription-based pro
 
 ---
 
-## 🧩 Problem Statement
+## 📊 Problem Statement
 
 Netflix's product team is exploring two monetization paths:
 
@@ -16,37 +16,37 @@ The Premium tier price was recently increased from **$25.99** to **$29.99**.
 
 ---
 
-## 💡 Business Question
+## 📊 Business Question
 
 > Does introducing a Premium tier with a new feature at a higher price ($29.99) generate higher long-term revenue (LTV) than maintaining a Standard-only plan at $17.99, while keeping churn at an acceptable level?
 
 ---
 
-## 🧪 Hypotheses
+## 📊 Hypotheses
 
 ### 1. 📈 **Primary Hypothesis – LTV Impact**
 
 - **H₀**: No significant difference in average LTV between Premium and Standard tiers.
 - **H₁**: Premium tier results in a higher average LTV despite potential churn.
 
-### 2. 🔁 **Secondary Hypothesis – Churn Risk**
+### 2. 📈 **Secondary Hypothesis – Churn Risk**
 
 - **H₀**: Churn rate remains the same or lower for Premium tier.
 - **H₁**: Churn rate is significantly higher in Premium, potentially offsetting revenue gains.
 
-### 3. ⚙️ **Tertiary Hypothesis – Feature Value**
+### 3. 📈 **Tertiary Hypothesis – Feature Value**
 
 - **H₀**: New feature does not improve retention or conversion.
 - **H₁**: Feature increases retention/conversion enough to justify price.
 
-### 4. 🧠 **Behavioral Hypothesis – User Response**
+### 4. 📈 **Behavioral Hypothesis – User Response**
 
 - **H₀**: Retention and conversion remain the same or fall slightly, while downgrade rate increases.
 - **H₁**: Premium tier boosts LTV via higher retention, conversion, and lower downgrade rate.
 
 ---
 
-## 🧪 Experiment Design
+## 📊 Experiment Design
 
 - **Type**: Simulated SaaS Pricing Tier A/B Test (Merged: Feature + Price)
 - **Groups**:
@@ -74,41 +74,41 @@ The Premium tier price was recently increased from **$25.99** to **$29.99**.
 
 ## 📁 Simulated Dataset
 
-> 📌 [Click here to view dataset.csv](./Netflix-Pricing-Tier-LTV-Experiment.csv)
+>  [Click here to view dataset.csv](./Netflix-Pricing-Tier-LTV-Experiment.csv)
 
-| user_id | group     | month | arpu | converted | churned | active | upgraded | downgraded | retention | revenue | trial_user |
-|---------|-----------|-------|------|-----------|---------|--------|----------|------------|-----------|---------|------------|
-| 001     | Premium   | 1     | 29.99| 1         | 0       | 1      | 0        | 0          | 1         | 29.99   | 0          |
-| ...     | ...       | ...   | ...  | ...       | ...     | ...    | ...      | ...        | ...       | ...     | ...        |
+| user_id | group     | month | converted | churned | active | upgraded | downgraded | monthly_revenue | 
+|---------|-----------|-------|-----------|---------|--------|----------|------------|---------|
+| 001     | Premium   | 1     | 1         | 0       | 1      | 0        | 0          | 29.99   | 
+| ...     | ...       | ...   | ...       | ...     | ...    | ...      | ...        | ...     | 
 
 ---
 
-## 📈 Key Insights
+## 📊 Key Insights
 
-### 📊 LTV vs. Churn Risk
+### 📈 LTV vs. Churn Risk
 
 - Premium users have **~15–18% higher projected LTV** than Standard users.
 - Churn risk increases **moderately** in Premium, but not enough to offset the revenue benefit.
 
-### 🚀 Conversion Rate Impact
+### 📈 Conversion Rate Impact
 
 - Premium tier shows a **+19.97% increase** in conversion rate over Standard.
 - Indicates stronger perceived value from pricing + feature combo.
 
-### 🔄 Upgrade & Downgrade Behavior
+### 📈 Upgrade & Downgrade Behavior
 
 - Upgrade rate is nearly **2×** higher than downgrade rate across 6 months.
 - Signifies strong acceptance of Premium pricing and product improvements.
 
 ---
 
-## 📌 Dashboard Preview
+## 📊 Dashboard Preview
 
 ![Dashboard Preview](./Netflix-Pricing-Tier-LTV-Experiment.png)
 
 ---
 
-## 📘 Notes
+## 📊 Notes
 
 This test assumes:
 - Phase 1: Price sensitivity was validated between $25.99 and $29.99.
@@ -117,14 +117,3 @@ This test assumes:
 
 ---
 
-## 🧠 Uplift Calculation Example
-
-```tableau
-Uplift (%) =
-(
-    { FIXED : AVG(IF [group] = "Premium" THEN [ARPU $] * 6 END) }
-    -
-    { FIXED : AVG(IF [group] = "Standard" THEN [ARPU $] * 6 END) }
-)
-/
-{ FIXED : AVG(IF [group] = "Standard" THEN [ARPU $] * 6 END) }
