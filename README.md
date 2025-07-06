@@ -36,7 +36,7 @@ The Premium tier price was recently increased from **$25.99** to **$29.99**.
 
 ### 3. 📈 **Behavioral Hypothesis – User Response**
 
-- **H₀**: Retention and conversion remain the same or fall slightly, while the downgrade rate increases.
+- **H₀**: The premium tier does not lead to significantly improved user behavior. Retention and conversion remain the same or fall slightly, while the downgrade rate increases.
 - **H₁**: Premium tier boosts LTV by at least 10%, driven by:
           ≥ 10% increase in conversion rate
           ≥ 15% decrease in downgrade rate
