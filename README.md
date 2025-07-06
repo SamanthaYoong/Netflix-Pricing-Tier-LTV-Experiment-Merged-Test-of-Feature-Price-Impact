@@ -84,7 +84,7 @@ This test assumes:
 
 ## 📁 Simulated Dataset
 
->  [Click here to view dataset.csv](./Netflix-Pricing-Tier-LTV-Experiment.csv)
+>  [Click here to view dataset.csv](netflix_pricing_ltv_experiment.csv)
 
 | user_id | group     | month | converted | churned | active | upgraded | downgraded | monthly_revenue | 
 |---------|-----------|-------|-----------|---------|--------|----------|------------|---------|
