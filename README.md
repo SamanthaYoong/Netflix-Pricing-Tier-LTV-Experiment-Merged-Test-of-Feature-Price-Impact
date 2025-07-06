@@ -3,6 +3,10 @@
 
 This case study simulates a pricing tier experiment for a subscription-based product like Netflix. It explores how a newly introduced Premium plan—with a higher price and enhanced features—impacts customer Lifetime Value (LTV), churn, and user upgrade behavior compared to the existing Standard plan.
 
+## 📊 Dashboard Preview
+
+![Dashboard Preview](Netflix-Pricing-Tier-LTV-Experiment-Merged-Test-of-Feature-&-Price-Impact)
+
 ---
 
 ## 📊 Problem Statement
@@ -40,8 +44,7 @@ The Premium tier price was recently increased from **$25.99** to **$29.99**.
 - **H₁**: Premium tier boosts LTV by at least 10%, driven by:
           ≥ 10% increase in conversion rate
           ≥ 15% decrease in downgrade rate
-  	.. despite the higher monthly price of $29.99
-
+  	
 ---
 
 ## 📊 Experiment Design
@@ -53,6 +56,15 @@ The Premium tier price was recently increased from **$25.99** to **$29.99**.
 - **Sample Size**: 1,000 users per group
 - **Duration**: 6 months (simulated)
 - **Controlled Variables**: Acquisition channels, onboarding, UX
+
+---
+
+## 📊 Notes
+
+This test assumes:
+- Phase 1: Price sensitivity was validated between $25.99 and $29.99.
+- Phase 2: Feature acceptance was validated at $25.99.
+- Phase 3 (this case): Merged test for full rollout feasibility.
 
 ---
 
@@ -100,18 +112,5 @@ The Premium tier price was recently increased from **$25.99** to **$29.99**.
 
 ---
 
-## 📊 Dashboard Preview
 
-![Dashboard Preview](./Netflix-Pricing-Tier-LTV-Experiment.png)
-
----
-
-## 📊 Notes
-
-This test assumes:
-- Phase 1: Price sensitivity was validated between $25.99 and $29.99.
-- Phase 2: Feature acceptance was validated at $25.99.
-- Phase 3 (this case): Merged test for full rollout feasibility.
-
----
 
