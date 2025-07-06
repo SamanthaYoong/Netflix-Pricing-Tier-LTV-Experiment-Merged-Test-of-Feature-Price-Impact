@@ -112,5 +112,32 @@ This test assumes:
 
 ---
 
+### 📈 Tools Used
+- Tableau for visualization & dashboarding
 
+- Excel / Google Sheets for simulation & data prep
 
+- Markdown & GitHub for documentation
+
+---
+
+### 🧠 Author
+- Samantha Yoong
+  
+- Aspiring Product/Growth Analyst | Data-Driven Storyteller
+  
+- 📧 Contact Me
+  
+---
+
+### ⭐ What You’ll Learn from This Case
+
+- How to structure A/B pricing tests for SaaS
+
+- When to use LTV, churn, and behavioural insights
+
+- How to simulate data for analytics portfolios
+
+- Effective dashboard layout for hiring visibility
+
+---
