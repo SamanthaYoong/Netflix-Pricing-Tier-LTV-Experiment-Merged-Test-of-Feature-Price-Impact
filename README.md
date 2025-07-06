@@ -1,105 +1,130 @@
-# 📊 Netflix Pricing Tier LTV Experiment: Merged Test of Feature & Price Impact
+# 📊 Netflix Pricing Tier LTV Experiment  
+**Merged Test of Feature & Price Impact**
 
-> **Simulated case study to demonstrate data analysis logic and product thinking.**  
-> Tools: SQL, Excel, Tableau, GitHub  
-> 🔗 [View the Interactive Tableau Dashboard](https://public.tableau.com/views/NetflixPricingTierLTVExperimentMergedTestofFeaturePriceImpact/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-
----
-
-## 🖼️ Dashboard Preview
-
-![Dashboard Preview](Netflix-Pricing-Tier-LTV-Experiment-Merged-Test-of-Feature-&-Price-Impact.png)
+This case study simulates a pricing tier experiment for a subscription-based product like Netflix. It explores how a newly introduced Premium plan—with a higher price and enhanced features—impacts customer Lifetime Value (LTV), churn, and user upgrade behavior compared to the existing Standard plan.
 
 ---
 
-## 📊 Problem Statement
+## 🧩 Problem Statement
 
-Product team wants to evaluate which pricing strategy — Standard ($17.99/month, no new features) vs. Premium ($29.99/month, includes a new built-in feature that enables seamless streaming even with poor internet connectivity) — maximizes long-term revenue while balancing user churn.
+Netflix's product team is exploring two monetization paths:
 
-Note: The Premium plan pricing was recently increased from $25.99/month to 	$29.99/month.
+- **Standard Tier**: $17.99/month — no new features
+- **Premium Tier**: $29.99/month — includes a new built-in feature that enables seamless streaming even with poor internet
 
----
-
-## 📊 Objective
-
-- Increase Clickthrough Rate by **20%**
-- Reduce Bounce Rate by **15%**
-- Improve Livestream Conversion Rate by **10%**
+The Premium tier price was recently increased from **$25.99** to **$29.99**.
 
 ---
 
-## 📊 Hypothesis
+## 💡 Business Question
 
-If we introduce **exclusive livestream-only prices** and add a **live chat overlay** directly on the display, user participation will increase — because customers are incentivized and influenced by real-time chat before purchasing.
-
----
-
-## 📊 Test Setup
-
-| Element        | Description                                                       |
-|----------------|-------------------------------------------------------------------|
-| **Duration**   | Simulated 7-day experiment                                        |
-| **Sample Size**| 10,000 simulated user records                                     |
-| **Audience**   | Frequent platform visitors                                        |
-| **Split**      | 50% Control (A) / 50% Variant (B)                                 |
-| **Tools**      | SQL, Excel, Tableau, GitHub                                       |
-
-**Test Groups:**
-
-| Group           | Description                                                                 |
-|------------------|------------------------------------------------------------------------------|
-| **Control (A)**  | Original product prices + separate live chat window                         |
-| **Variant (B)**  | Exclusive livestream prices + live chat overlay on display screen           |
+> Does introducing a Premium tier with a new feature at a higher price ($29.99) generate higher long-term revenue (LTV) than maintaining a Standard-only plan at $17.99, while keeping churn at an acceptable level?
 
 ---
 
-## 📊 Results (Simulated)
+## 🧪 Hypotheses
 
-| Metric                     | Control (A) | Variant (B) | Uplift         |
-|----------------------------|-------------|-------------|----------------|
-| Clickthrough Rate (CTR)    | 5.10%       | 5.26%       | **+0.16 pp**   |
-| Livestream Conversion Rate | 3.28%       | 2.86%       | **-0.42 pp**   |
-| Livestream Bounce Rate     | 21.10%      | 19.90%      | **-1.20 pp**   |
+### 1. 📈 **Primary Hypothesis – LTV Impact**
 
----
+- **H₀**: No significant difference in average LTV between Premium and Standard tiers.
+- **H₁**: Premium tier results in a higher average LTV despite potential churn.
 
-## 📊 Insights & Interpretation
+### 2. 🔁 **Secondary Hypothesis – Churn Risk**
 
-- Variant B showed a **small CTR improvement** but a **decline in conversion rate**.
-- Customers may still **perceive prices as too high** or lack urgency to purchase.
-- Slight reduction in bounce rate may reflect better session engagement.
+- **H₀**: Churn rate remains the same or lower for Premium tier.
+- **H₁**: Churn rate is significantly higher in Premium, potentially offsetting revenue gains.
 
----
+### 3. ⚙️ **Tertiary Hypothesis – Feature Value**
 
-## 📊 Recommendations
+- **H₀**: New feature does not improve retention or conversion.
+- **H₁**: Feature increases retention/conversion enough to justify price.
 
-- Benchmark competitor pricing and **adjust perceived value**
-- Introduce **urgency triggers** (e.g. countdowns, limited offers)
-- Segment audiences by behavior (e.g. cart size, new vs returning)
-- Explore additional layout and chat format tests
+### 4. 🧠 **Behavioral Hypothesis – User Response**
+
+- **H₀**: Retention and conversion remain the same or fall slightly, while downgrade rate increases.
+- **H₁**: Premium tier boosts LTV via higher retention, conversion, and lower downgrade rate.
 
 ---
 
-## 📊 Tools Used
+## 🧪 Experiment Design
 
-- **SQL** – Data shaping and filtering logic  
-- **Excel** – Mock dataset generation (10,000 rows)  
-- **Tableau Public** – Interactive dashboard for A/B comparison  
-- **GitHub** – Case study documentation
-
----
-
-## 📊 Reflection
-
-This self-designed experiment helped me practice product analytics, hypothesis framing, test simulation, and dashboard communication.  
-Next, I plan to build a **Lifetime Value (LTV)** experiment to evaluate how pricing tiers influence retention and revenue.
+- **Type**: Simulated SaaS Pricing Tier A/B Test (Merged: Feature + Price)
+- **Groups**:
+  - `Standard`: $17.99/month, no new feature
+  - `Premium`: $29.99/month, includes new feature
+- **Sample Size**: 1,000 users per group
+- **Duration**: 6 months (simulated)
+- **Controlled Variables**: Acquisition channels, onboarding, UX
 
 ---
 
-## 📊 Related Files
+## 📊 Key Metrics Tracked
 
-- 📄 `ab_test_dataset.csv` – Mock user-level data
-- 📊 `dashboard_link.twbx` – Tableau Public Dashboard *(link or file)*
-- 📝 `README.md` – Case study documentation
+| Metric                  | Description                                      |
+|------------------------|--------------------------------------------------|
+| **Conversion Rate**    | % of users who convert from trial or free        |
+| **Churn Rate**         | % of users who cancel subscription               |
+| **Retention Rate**     | % of users who remain active over time           |
+| **LTV**                | Lifetime Value = ARPU × 6 (months)               |
+| **ARPU**               | Average Revenue Per User                         |
+| **Upgrade Rate**       | % of users who move from Standard → Premium      |
+| **Downgrade Rate**     | % of users who move from Premium → Standard      |
 
 ---
+
+## 📁 Simulated Dataset
+
+> 📌 [Click here to view dataset.csv](./Netflix-Pricing-Tier-LTV-Experiment.csv)
+
+| user_id | group     | month | arpu | converted | churned | active | upgraded | downgraded | retention | revenue | trial_user |
+|---------|-----------|-------|------|-----------|---------|--------|----------|------------|-----------|---------|------------|
+| 001     | Premium   | 1     | 29.99| 1         | 0       | 1      | 0        | 0          | 1         | 29.99   | 0          |
+| ...     | ...       | ...   | ...  | ...       | ...     | ...    | ...      | ...        | ...       | ...     | ...        |
+
+---
+
+## 📈 Key Insights
+
+### 📊 LTV vs. Churn Risk
+
+- Premium users have **~15–18% higher projected LTV** than Standard users.
+- Churn risk increases **moderately** in Premium, but not enough to offset the revenue benefit.
+
+### 🚀 Conversion Rate Impact
+
+- Premium tier shows a **+19.97% increase** in conversion rate over Standard.
+- Indicates stronger perceived value from pricing + feature combo.
+
+### 🔄 Upgrade & Downgrade Behavior
+
+- Upgrade rate is nearly **2×** higher than downgrade rate across 6 months.
+- Signifies strong acceptance of Premium pricing and product improvements.
+
+---
+
+## 📌 Dashboard Preview
+
+![Dashboard Preview](./Netflix-Pricing-Tier-LTV-Experiment.png)
+
+---
+
+## 📘 Notes
+
+This test assumes:
+- Phase 1: Price sensitivity was validated between $25.99 and $29.99.
+- Phase 2: Feature acceptance was validated at $25.99.
+- Phase 3 (this case): Merged test for full rollout feasibility.
+
+---
+
+## 🧠 Uplift Calculation Example
+
+```tableau
+Uplift (%) =
+(
+    { FIXED : AVG(IF [group] = "Premium" THEN [ARPU $] * 6 END) }
+    -
+    { FIXED : AVG(IF [group] = "Standard" THEN [ARPU $] * 6 END) }
+)
+/
+{ FIXED : AVG(IF [group] = "Standard" THEN [ARPU $] * 6 END) }
